@@ -18,7 +18,7 @@ html {
 /* home hatter beallitasa */
 .home-container {
     height: 1000px;
-    background-image: url("../pics/wp8984697.jpg");
+    background-image: url("wp8984697.jpg");
     background-size: cover;
     background-attachment: fixed;
     background-position: center center;
@@ -188,7 +188,7 @@ html {
 .services-section {
     height: 800px;
     width: 100%;
-    background: url("../pics/wp6826657.png");
+    background: url("wp6826657.png");
     background-size: cover;
     background-attachment: fixed;
     background-position: center center;
@@ -364,15 +364,15 @@ html {
 }
 @font-face {
     font-family: firstFont;
-    src: url("../font/babapro-font.bold.ttf");/* címeknél használt betűtipus */
+    src: url("babapro-font.bold.ttf");/* címeknél használt betűtipus */
 }
 @font-face {
     font-family: secondFont;
-    src: url("../font/DancingScript-Regular.ttf"); /* vékony, kézzel írt, dőlt betűtipus */
+    src: url("DancingScript-Regular.ttf"); /* vékony, kézzel írt, dőlt betűtipus */
 }
 @font-face {
     font-family: thirdFont;
-    src: url("../font/aclonica.regular.ttf");  /* bekezdéseknél használt betűtipus */
+    src: url("aclonica.regular.ttf");  /* bekezdéseknél használt betűtipus */
 }
 
 
