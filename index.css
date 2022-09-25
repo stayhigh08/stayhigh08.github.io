@@ -1,0 +1,428 @@
+/*alap beallitasok*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+    z-index: 5;
+    transition: all 300ms; -webkit-transition: all 300ms; -moz-transition: all 300ms; -o-transition: all 300ms;
+    list-style: none;
+}
+/*scroll simabb mozgasa*/
+html {
+    scroll-behavior: smooth;
+}
+
+/*Home*/
+
+/* home hatter beallitasa */
+.home-container {
+    height: 1000px;
+    background-image: url("../pics/wp8984697.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center center;
+}
+/*logo meretenek beallitasa*/
+#logo-img {
+    width: 135px;
+    height: 58px;
+}
+/*navigacios bar beallitasok*/
+.home-container nav ul {
+    position: relative;
+    top: 50px;
+    display: flex;
+    justify-content: center;
+    flex-flow: row nowrap;
+    gap: 600px;
+}
+/*navigacios bar gomboknak beallitasa*/
+.home-container nav ul li button {
+    position: relative;
+    top: 22px;
+    cursor: pointer;
+    height: 33px;
+    width: 130px;
+    background-color: transparent;
+    color: #fff;
+    border: 1px solid orange;
+    border-radius: 50px;
+    font-family: firstFont;
+}
+/*ha ra viszed az egered a navigacios bar barmelyik gombjara*/
+.home-container nav ul li button:hover {
+    transition: 0.35s;
+    background: orange;
+}
+/*home pageen levö szöveg beallitasok*/
+.home-container .content ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column nowrap;
+}
+/*CambLogistics felirat beallitasok*/
+.home-container ul li h1 {
+    position: relative;
+    height: 50px;
+    margin-top: 300px;
+    letter-spacing: 0.37em;
+    font-size: 62px;
+    color: #fff;
+    font-family: firstFont;
+    text-align: center;
+}
+/*Fast and Safe in elegancy felirat beallitasok*/
+.home-container ul li h5 {
+    position: relative;
+    top: 430px;
+    font-size: 40px;
+    font-style: italic;
+    font-family: secondFont;
+    letter-spacing: 0.05em;
+    color: #fff;
+}
+/*home pageen levö listak merete*/
+.home-container ul li  {
+    height: 10px;
+}
+/*felsö sarga vonal beallitasok*/
+.home-container ul li .orange-bar-container-1 {
+    position: relative;
+    top: 290px;
+    background: orange;
+    width: 841px;
+    height: 4px;
+
+}
+/*also sarga vonal beallitasok*/
+.home-container ul li .orange-bar-container-2 {
+    position: relative;
+    top: 395px;
+    background: orange;
+    width: 841px;
+    height: 4px;
+}
+
+/*ABOUT*/
+
+/*taxi kep beallitasok*/
+.about-container #taxi-img {
+    -moz-box-shadow: 10px 10px 5px rgb(80, 76, 76);
+    -webkit-box-shadow: 10px 10px 5px rgb(92, 91, 91);
+    box-shadow: 10px 10px 5px rgb(94, 93, 93);
+    -moz-border-radius:25px;
+    -webkit-border-radius:25px;
+    border-radius:25px;
+    width: 278.32px;
+    height: 411.6px;
+    object-fit: cover;
+    object-position: 50% 50%;
+    max-width: 100%;
+}
+
+/*taxis kép hover effektusa*/
+.about-container #taxi-img:hover, .services-section img:hover {
+    transform: scale(1.05);
+    -webkit-transform: scale(1.05);
+    -moz-transform: scale(1.05);
+    -o-transform: scale(1.05);
+    transition: 0.3s;
+}
+
+/* about-section méretei, layoutja */
+.about-section {
+    width: 100%;
+    height: 100vh;
+    background: gray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/*About section tartalmi reszek beallitasai*/
+.about-section .about-container {
+    width: 1280px;
+    max-width: 95%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+}
+
+/* about-section szöveg container beállításai */
+.about-section .about-container .text {
+    width: 550px;
+    max-width: 100%;
+    padding: 0 10px;
+
+}
+/*2019 óta... szöveg beallitasa*/
+.about-section .about-container .text h2 {
+    color: #fff;
+    letter-spacing: 0.08em;
+    font-size: 28.8px;
+    font-family: firstFont;
+    margin-bottom: 20px;
+}
+/*Camblogistics, önökért.... szöveg beallitasa*/
+.about-section .about-container .text h3 {
+    font-style: italic;
+    color: #fff;
+    font-size: 28.8px;
+    font-family: firstFont;
+}
+/*A cég még 2019-ben... szöveg beallitasa*/
+.about-section .about-container .text p {
+    color: #fff;
+    font-size: 19.2px;
+    line-height: 1.8em;
+    letter-spacing: 0em;
+    font-family: thirdFont;
+}
+
+/*SERVICES*/
+
+/*Services section beallitasai*/
+.services-section {
+    height: 800px;
+    width: 100%;
+    background: url("../pics/wp6826657.png");
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center center;
+}
+/*services section tartalmanak beallitasai*/
+.services-container {
+    width: 1280px;
+    max-width: 95%;
+    margin: 0 auto;
+}
+/* ez az ul tartalmazza a személyszállítás, ill. autószállítás elemet */
+.services-section ul {
+    position: relative;
+    top: 130px;
+    gap: 90px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+}
+/*ket kocsi es a szöveg beallitasa*/
+.services-section ul li {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+/*ket kocsi beallitasa*/
+/* beállítottam a kör formáját, méretét */
+.services-section img {
+    width: 322px;
+    height: 306px;
+    clip-path: circle();
+}
+/*szöveg beallitasa*/
+.services-section p {
+    position: relative;
+    top: 30px;
+    font-size: 20.8px;
+    max-width: 500px;
+    color: #fff;
+    font-family: thirdFont;
+}
+/* személyszállítás, autószállítás felirat stílusa */
+.services-section h3 {
+    position: relative;
+    bottom: 25px;
+    color: #fff;
+    letter-spacing: 0.2em;
+    font-size: 26px;
+    font-family: firstFont;
+
+}
+
+/*REFERENCE*/
+
+/* háttér színe, section mérete */
+.reference-section {
+    background: rgb(103, 103, 103);
+    height: 500px;
+    width: 100%;
+
+}
+/* ez az ul tartalmazza hogy miert utazz felünk, es hogy miert dolgozz velünk...*/
+.reference-section ul {
+    display: flex;
+    gap: 100px;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+}
+/*A 3 cím alatt lévő bekezdések beállításai*/
+.reference-section p {
+    position: relative;
+    top: 90px;
+    text-align: center;
+    font-family: thirdFont;
+    color: #fff;
+}
+
+/* Miért ut...? 100%-os el... Miért dolg...? címek beállításai */
+.reference-section h3 {
+    font-weight: 400;
+    position: relative;
+    top: 50px;
+    color: #fff;
+    font-family: firstFont;
+    letter-spacing: 0.2em;
+    font-size: 16px;
+    text-align: center;
+}
+/*harom sarga ikonnak a beallitasa*/
+.reference-section img {
+    position: relative;
+    top: 50px;
+    width: 261px;
+    height: 261px;
+}
+
+/*FOOTER*/
+
+/* footer section magassága, háttérszíne */
+.footer-section {
+    height: 430px;
+    background: rgb(48, 48, 48);
+}
+/* footer unordered list beállításai(tartalmazza a 2 elemet) */
+.footer-section ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+    gap: 150px;
+}
+/* a footer logó beállításai */
+.footer-section img {
+    width: 379px;
+    height: 163px;
+    max-width: 100%;
+}
+/* footeres gomb beállítások */
+.footer-section button {
+    cursor: pointer;
+    background: transparent;
+    border-radius: 30px;
+    border-color: orange;
+    color: #fff;
+    height: 45px;
+    width: 280px;
+    font-family: firstFont;
+    letter-spacing: 0.05em;
+    font-size: 16px;
+}
+/* footer-es gomb hover-ja */
+.footer-section button:hover {
+    transition: 0.45s;
+    background: orange;
+}
+/*a logó és a gomb container beállításai a footerben */
+.footer-section ul li .button-logo-container {
+    display: flex;
+    position: relative;
+    top: 100px;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column wrap;
+    gap: 45px;
+}
+/* legalsó szekció(footer) text container beállításai */
+.footer-section .text {
+    position: relative;
+    top: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column wrap;
+}
+/* nyitvatartás, hívj bennünket felirat stílusok */
+.footer-section .text h3 {
+    font-weight: 400;
+    font-size: 20px;
+    color: orange;
+    letter-spacing: 0.2em;
+    font-family: firstFont;
+}
+/* telefonszám, nyitvatartás dátumok szövegek stílusa a legalsó szekcióban */
+.footer-section .text h5 {
+    color: #fff;
+    font-weight: 400;
+    font-family: firstFont;
+    letter-spacing: 0.2em;
+    font-size: 14px;
+}
+@font-face {
+    font-family: firstFont;
+    src: url("../font/babapro-font.bold.ttf");/* címeknél használt betűtipus */
+}
+@font-face {
+    font-family: secondFont;
+    src: url("../font/DancingScript-Regular.ttf"); /* vékony, kézzel írt, dőlt betűtipus */
+}
+@font-face {
+    font-family: thirdFont;
+    src: url("../font/aclonica.regular.ttf");  /* bekezdéseknél használt betűtipus */
+}
+
+
+
+@media(max-width: 1180px) {
+    .about-section {
+        width: 100%;
+        height: auto;
+        padding: 70px 0px;
+    }
+}
+@media(max-width: 650px) {
+    .about-section .about-container img {
+        margin-bottom: 35px;
+    }
+}
+@media(max-width: 999px) {
+    .about-section .about-container .text {
+        display: grid;
+        position: relative;
+        top: 30px;
+        place-items: center;
+        text-align: center;
+    }
+}
+@media(max-width: 1148px) {
+    .services-section {
+        height: 150vh;
+    }
+    .services-section p {
+        text-align: center;
+    }
+}
+@media(max-width: 980px) {
+    .reference-section {
+        height: 1000px;
+    }
+}
+@media(max-width: 620px) {
+    .reference-section {
+        height: 1500px;
+    }
+}
+@media(max-width: 757px) {
+    .footer-section {
+        height: 630px;
+    }
+}
+@media(max-width: 1148px) {
+    .services-section {
+        height: 1400px;
+    }
+}
