@@ -70,9 +70,13 @@ html {
     letter-spacing: 0.37em;
     font-size: 62px;
     color: #fff;
-    font-family: firstFont;
     text-align: center;
 }
+
+.home-container ul li h1 span {
+    font-family: firstFont;
+}
+
 /*Fast and Safe in elegancy felirat beallitasok*/
 .home-container ul li h5 {
     position: relative;
@@ -188,7 +192,7 @@ html {
 .services-section {
     height: 800px;
     width: 100%;
-    background: url("wp6826657.png");
+    background: url("../pics/wp6826657.png");
     background-size: cover;
     background-attachment: fixed;
     background-position: center center;
@@ -375,7 +379,45 @@ html {
     src: url("aclonica.regular.ttf");  /* bekezdéseknél használt betűtipus */
 }
 
+@media(max-width: 911px) {
+    .home-container nav .nav-ul {
+        gap: 300px;
+    }
+    #span-camb::after{
+        content: "\a";
+        white-space: pre;
+    }
+    .home-container .content ul li .orange-bar-container-1 {
+        width: 300px;
+    }
+    .home-container .content ul li .orange-bar-container-2 {
+        width: 540px;
+        top: 480px;
+    }
+    .home-container .content ul li #home-h5 {
+        top: 500px;
+    }
+}
 
+@media(max-width: 585px) {
+    .home-container nav .nav-ul {
+        gap: 100px;
+    }
+    .home-container .content ul li #home-h1 {
+        font-size: 30px;
+    }
+    .home-container .content ul li .orange-bar-container-1 {
+        width: 145.1612px;
+    }
+    .home-container .content ul li .orange-bar-container-2 {
+        width: 261.2911px;
+        top: 380px;
+    }
+    .home-container .content ul li #home-h5 {
+        top: 400px;
+        font-size: 25px;
+    }
+}
 
 @media(max-width: 1180px) {
     .about-section {
